@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Music Player</title>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Now Playing</span>
+            <i class="material-icons">more_horiz</i>
+        </div>
+
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+
+        <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+
+        <div class="progress-area">
+            <div class="progress-bar"></div>
+
+            <div class="timer">
+                <span class="current">0:00</span>
+                <span class="duration">3:27</span>
+            </div>
+
+            <audio id="main-audio" src=""></audio>
+
+        </div>
+
+        <div class="controls">
+            <i id="repeat-plist" class="material-icons" title="playlist looped" >repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+            <div class="play-pause">
+                <i class="material-icons">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+
+        <div class="song-list">
+            <div class="header">
+               <div class="row">
+                <i class="material-icons">queue_music</i>
+                <span>Queue</span>
+               </div> 
+               <i id="close" class="material-icons">close</i>
+            </div>
+        
+         <ul>
+            <!-- <li>
+                <div class="row">
+                    <span>Smoke Rings</span>
+                    <p>Sam Cooke</p>
+                </div>
+                <span class="audio-duration">3:27</span>
+            </li>
+            <li>
+                <div class="row">
+                    <span>Lovely Day</span>
+                    <p>Bill Withers</p>
+                </div>
+                <span class="audio-duration">4:17</span>
+            </li>
+            <li>
+                <div class="row">
+                    <span>No Distraction</span>
+                    <p>Beck</p>
+                </div>
+                <span class="audio-duration">3:18</span>
+            </li>
+            <li>
+                <div class="row">
+                    <span>Dreams</span>
+                    <p>Fleetwood Mac</p>
+                </div>
+                <span class="audio-duration">4:17</span>
+            </li>
+            <li>
+                <div class="row">
+                    <span>Tea For One</span>
+                    <p>Led Zeppelin</p>
+                </div>
+                <span class="audio-duration">9:26</span>
+            </li>
+            <li>
+                <div class="row">
+                    <span>Monage Daydream</span>
+                    <p>David Bowie</p>
+                </div>
+                <span class="audio-duration">4:41</span>
+            </li>
+            <li>
+                <div class="row">
+                    <span>Bennie and the Jets</span>
+                    <p>Elton John</p>
+                </div>
+                <span class="audio-duration">5:23</span>
+            </li> -->
+        </ul>
+
+        </div>
+
+    </div>
+
+    <script src="js/song-list.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
